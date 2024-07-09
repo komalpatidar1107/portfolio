@@ -23,6 +23,13 @@
    
     
 }
+.menu{
+    display: none;
+    align-items: center;
+ }
+ #close-button{
+    display: none;
+ }
 
 .heading{
     font-size: 35px;
@@ -154,6 +161,9 @@ a:hover{
     font-weight: 200;
     margin-bottom: 40px;
 }
+.head3{
+    display: none;
+}
 
  .featured-portfolio {
     display: flex;
@@ -197,6 +207,10 @@ a:hover{
 /* #######################  project section  ####################### */
 
 .project-section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     padding: 40px 0;
     background-color: rgb(20, 51, 59);
     border: 1px solid rgb(14, 43, 50);
@@ -322,6 +336,160 @@ font-weight: 700;
     margin-top: 40px;
 }
 
- 
-   
- 
+
+
+  @media screen and (max-width: 640px) {
+    .heading {
+        font-size: 23px;
+        padding: 10px 20px;
+    }
+    .navs{
+      display: flex;
+      flex-direction: column;
+      justify-content:flex-start;
+      position: fixed;
+      top: 0px;
+      right:-300px;
+      height: 50vh;
+      width: 300px;
+      background-color: rgb(196, 157, 157);
+      padding: 50px 0 0 10px;
+      box-shadow: inset -20px -20px 40px #4b5242;
+      transition: 0.3s;
+    }
+    .navs.active{
+        right:0px;
+       }
+       .navs li{
+           margin: 10px 0;
+       }
+       .navs li a{
+       color: #030206;
+       font-weight: 700;
+     }
+     .menu{
+        display:flex;
+        align-items: center;
+        margin-left: 20px;
+     }
+        
+     .menu i{
+        color: rgb(252, 249, 249) ;
+        padding: 5px 10px;
+        font-size: 24px;
+     }
+     #close-button{
+        display: initial;
+        position: absolute;
+        top: 10px;
+        left:10px;
+        font-size: 24px;
+        color: #0a0b0a !important;
+        }
+
+    .section1 {
+        margin: 20px  0;
+        padding: 50px 30px;
+         width: 100%;
+        height: 560px;
+        display: flex;
+        gap: 20px;
+        }
+    .image img {
+        width: 250px;
+        transform: translate( 0px,0px);
+        border-radius: 40%;
+        }    
+    .title {
+        padding: 10% 5%;
+        line-height: 1.3;
+        text-shadow: 1px 1px rgb(147, 133, 133);
+        }  
+        .about-me-cards {
+            display: flex;
+            flex-direction: row;
+            flex-wrap: wrap;
+            padding: 0 20px; 
+            row-gap: 30px;
+            column-gap: 30px;
+            justify-content: center;
+        }    
+        .technical-skills-heading {
+            display: none;
+        } 
+        .head3{
+            display: flex;
+            font-size: 30px;
+            margin-bottom: 30px;
+            color: #4b5242;
+        } 
+        .contact {
+            display: flex;
+            flex-direction:column;
+            justify-content: center;
+            align-items: center;
+            gap: 0px;
+            padding: 40px 10px;
+            margin-left: 10px;
+            width: 100%;
+        }    
+        .contact-details {
+            width: 50%; 
+            padding: 30px 0;
+        }   
+        .heading3 {
+            padding-left: 200px;
+          
+        }   
+}
+@media screen and (max-width: 477px){
+    #p1 {  
+        padding-left: 10px;
+    }
+    #p3 {  
+        padding-left: 10px;
+    }
+    #b1 {
+        padding: 10px 20px;
+        
+    }
+    .title {
+         text-align: center;
+         transform: translate(-15px, 0px);
+    }
+    .image img {
+        width: 220px;
+        
+    }
+    .heading3 {
+        padding-left: 130px;
+    }  
+    .contact-details {
+         
+        width: 70%;
+         
+    }
+    #p32 {
+        width: ;
+        color: rgb(99, 93, 93);
+        font-size: 1.4rem;
+    }
+    .contact {
+        margin-left:0;
+        align-items: center;
+    }
+    .contact-me-form {
+        
+        margin-bottom: 10px;
+        height: 420px;
+        }
+    .input {
+        padding: 4px 40px;
+        border-radius: 10%;
+        background-color: aliceblue;
+    }
+    .submit {
+        margin-left: 150px;
+         
+    }
+}
